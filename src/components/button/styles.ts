@@ -1,0 +1,68 @@
+import { cva } from 'class-variance-authority';
+
+// ----------------------------------------------------------------------
+
+export const buttonStyles = cva('button', {
+  variants: {
+    variant: {
+      filled: [
+        'w-fit',
+        'cursor-pointer',
+        'rounded-md',
+        'border',
+        'border-transparent',
+        'bg-primary-1',
+        'p-3',
+        'text-sm',
+        'font-semibold',
+        'text-white',
+        'transition-all',
+        'duration-300',
+        'hover:opacity-80',
+        'active:scale-95',
+        'disabled:cursor-not-allowed',
+        'disabled:opacity-50',
+        'disabled:grayscale',
+        'disabled:active:scale-100',
+      ],
+      outlined: [
+        'w-fit',
+        'cursor-pointer',
+        'rounded-md',
+        'border',
+        'border-primary-1',
+        'bg-transparent',
+        'p-3',
+        'text-sm',
+        'font-semibold',
+        'text-primary-1',
+        'transition-all',
+        'duration-300',
+        'hover:opacity-80',
+        'active:scale-95',
+        'disabled:cursor-not-allowed',
+        'disabled:opacity-50',
+        'disabled:grayscale',
+        'disabled:active:scale-100',
+      ],
+      gost: [
+        'w-fit',
+        'cursor-pointer',
+        'text-sm',
+        'font-semibold',
+        'text-primary-1',
+        'transition-all',
+        'duration-300',
+        'hover:opacity-80',
+        'active:scale-95',
+        'disabled:cursor-not-allowed',
+        'disabled:opacity-50',
+        'disabled:grayscale',
+        'disabled:active:scale-100',
+      ],
+    },
+  },
+  defaultVariants: {
+    variant: 'filled',
+  },
+});
