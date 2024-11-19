@@ -13,17 +13,17 @@ export interface ConfigNavigationInterface {
 
 export const configNavigation: ConfigNavigationInterface[] = [
   {
-    title: 'Home',
+    title: 'Beranda',
     path: paths.main.root,
     icon: 'tabler:home-filled',
   },
   {
-    title: 'Map',
+    title: 'Peta',
     path: paths.main.map.root,
     icon: 'basil:location-solid',
   },
   {
-    title: 'About',
+    title: 'Tentang',
     path: paths.main.about.root,
     icon: 'mdi:about',
   },
