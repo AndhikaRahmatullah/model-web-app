@@ -1,4 +1,6 @@
 import React, { ReactNode } from 'react';
+// components
+import { ScrollAnimation } from '/src/components/scroll-animation';
 //
 import Navbar from './navbar';
 import Footer from './footer';
@@ -18,7 +20,9 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }: MainLayoutProps) =>
 
       {children}
 
-      <Footer />
+      <ScrollAnimation>
+        <Footer />
+      </ScrollAnimation>
     </main>
   );
 };
