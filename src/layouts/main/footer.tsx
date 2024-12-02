@@ -39,19 +39,19 @@ const Footer: React.FC = () => {
 
           <div className="flex flex-row items-center justify-center gap-2 md:justify-start">
             <Button component="RouterLink" href={paths.main.root} variant="gost" className="md:text-base">
-              Beranda
+              Home
             </Button>
 
             <span>|</span>
 
             <Button component="RouterLink" href={paths.main.map.root} variant="gost" className="md:text-base">
-              Peta
+              Maps
             </Button>
 
             <span>|</span>
 
             <Button component="RouterLink" href={paths.main.about.root} variant="gost" className="md:text-base">
-              Tentang
+              About
             </Button>
           </div>
         </div>
