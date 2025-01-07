@@ -9,7 +9,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([11892622.120182, -745693.510649, 11898806.865662, -741781.913322], map.getSize());
+map.getView().fit([11891073.291921, -751632.486989, 11905543.959661, -742480.017821], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -448,12 +448,22 @@ var bottomRightContainerDiv = document.getElementById('bottom-right-container')
 
 //geocoder
 
+var geocoder = new Geocoder('nominatim', {
+  provider: 'osm',
+  lang: 'en-US',
+  placeholder: 'Search place or address ...',
+  limit: 5,
+  keepOpen: true,
+});
+map.addControl(geocoder);
+document.getElementsByClassName('gcd-gl-btn')[0].className += ' fa fa-search';
+
 
 //layer search
 
 var searchLayer = new SearchLayer({
-    layer: lyr_KecamatanCiawi_9,
-    colName: 'Desa',
+    layer: lyr_KecamatanCiawi_8,
+    colName: 'NAMOBJ',
     zoom: 10,
     collapsed: true,
     map: map

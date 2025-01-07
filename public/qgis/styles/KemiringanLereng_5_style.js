@@ -6,7 +6,7 @@ function categories_KemiringanLereng_5(feature, value, size, resolution, labelTe
                 var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
                 switch(valueStr) {case '1':
                     return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(26,150,65,1.0)'}),
+        fill: new ol.style.Fill({color: 'rgba(255,245,235,1.0)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -14,7 +14,7 @@ function categories_KemiringanLereng_5(feature, value, size, resolution, labelTe
                     break;
 case '2':
                     return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(166,217,106,1.0)'}),
+        fill: new ol.style.Fill({color: 'rgba(253,218,182,1.0)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -22,7 +22,7 @@ case '2':
                     break;
 case '3':
                     return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(255,255,192,1.0)'}),
+        fill: new ol.style.Fill({color: 'rgba(253,171,103,1.0)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -30,7 +30,7 @@ case '3':
                     break;
 case '4':
                     return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(253,174,97,1.0)'}),
+        fill: new ol.style.Fill({color: 'rgba(246,119,35,1.0)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -38,7 +38,15 @@ case '4':
                     break;
 case '5':
                     return [ new ol.style.Style({
-        fill: new ol.style.Fill({color: 'rgba(215,25,28,1.0)'}),
+        fill: new ol.style.Fill({color: 'rgba(209,69,1,1.0)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+default:
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(127,39,4,1.0)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
