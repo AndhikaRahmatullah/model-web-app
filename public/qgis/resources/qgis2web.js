@@ -9,7 +9,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([11891073.291921, -751632.486989, 11905543.959661, -742480.017821], map.getSize());
+map.getView().fit([11889133.766763, -754686.959237, 11912852.796925, -739685.741312], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -463,7 +463,7 @@ document.getElementsByClassName('gcd-gl-btn')[0].className += ' fa fa-search';
 
 var searchLayer = new SearchLayer({
     layer: lyr_KecamatanCiawi_8,
-    colName: 'NAMOBJ',
+    colName: 'Desa',
     zoom: 10,
     collapsed: true,
     map: map

@@ -22,39 +22,39 @@ var wms_layers = [];
                 url: 'https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}'
             })
         });
-var lyr_PostEventNDVI_2 = new ol.layer.Image({
+var lyr_NDVIPraKejadian20202021_2 = new ol.layer.Image({
                             opacity: 1,
-                            title: "Post Event NDVI",
+                            title: "NDVI Pra Kejadian (2020-2021)",
                             
                             
                             source: new ol.source.ImageStatic({
-                               url: "./layers/PostEventNDVI_2.png",
+                               url: "./layers/NDVIPraKejadian20202021_2.png",
     attributions: ' ',
                                 projection: 'EPSG:3857',
                                 alwaysInRange: true,
                                 imageExtent: [11892520.000000, -755007.099280, 11905990.000000, -740216.065361]
                             })
                         });
-var lyr_PreEventNDVI_3 = new ol.layer.Image({
+var lyr_NDVIPascaKejadian20232024_3 = new ol.layer.Image({
                             opacity: 1,
-                            title: "Pre Event NDVI",
+                            title: "NDVI Pasca Kejadian (2023 - 2024)",
                             
                             
                             source: new ol.source.ImageStatic({
-                               url: "./layers/PreEventNDVI_3.png",
+                               url: "./layers/NDVIPascaKejadian20232024_3.png",
     attributions: ' ',
                                 projection: 'EPSG:3857',
                                 alwaysInRange: true,
                                 imageExtent: [11892520.000000, -755007.099280, 11905990.000000, -740216.065361]
                             })
                         });
-var lyr_rdNDVI_4 = new ol.layer.Image({
+var lyr_PerbedaanRelatifNDVIPraPasca_4 = new ol.layer.Image({
                             opacity: 1,
-                            title: "rdNDVI",
+                            title: "Perbedaan Relatif NDVI Pra Pasca",
                             
                             
                             source: new ol.source.ImageStatic({
-                               url: "./layers/rdNDVI_4.png",
+                               url: "./layers/PerbedaanRelatifNDVIPraPasca_4.png",
     attributions: ' ',
                                 projection: 'EPSG:3857',
                                 alwaysInRange: true,
@@ -132,8 +132,8 @@ var group_BaseMaps = new ol.layer.Group({
                                 fold: "open",
                                 title: "Base Maps"});
 
-lyr_GoogleSatellite_0.setVisible(true);lyr_GoogleMap_1.setVisible(true);lyr_PostEventNDVI_2.setVisible(true);lyr_PreEventNDVI_3.setVisible(true);lyr_rdNDVI_4.setVisible(true);lyr_KemiringanLereng_5.setVisible(true);lyr_AreaPotensiLongsor_6.setVisible(true);lyr_TitikLongsor_7.setVisible(true);lyr_KecamatanCiawi_8.setVisible(true);
-var layersList = [group_BaseMaps,lyr_PostEventNDVI_2,lyr_PreEventNDVI_3,lyr_rdNDVI_4,lyr_KemiringanLereng_5,lyr_AreaPotensiLongsor_6,lyr_TitikLongsor_7,lyr_KecamatanCiawi_8];
+lyr_GoogleSatellite_0.setVisible(true);lyr_GoogleMap_1.setVisible(true);lyr_NDVIPraKejadian20202021_2.setVisible(true);lyr_NDVIPascaKejadian20232024_3.setVisible(true);lyr_PerbedaanRelatifNDVIPraPasca_4.setVisible(true);lyr_KemiringanLereng_5.setVisible(true);lyr_AreaPotensiLongsor_6.setVisible(true);lyr_TitikLongsor_7.setVisible(true);lyr_KecamatanCiawi_8.setVisible(true);
+var layersList = [group_BaseMaps,lyr_NDVIPraKejadian20202021_2,lyr_NDVIPascaKejadian20232024_3,lyr_PerbedaanRelatifNDVIPraPasca_4,lyr_KemiringanLereng_5,lyr_AreaPotensiLongsor_6,lyr_TitikLongsor_7,lyr_KecamatanCiawi_8];
 lyr_KemiringanLereng_5.set('fieldAliases', {'slope_clas': 'slope_clas', 'slope_perc': 'slope_perc', 'slope_desc': 'slope_desc', 'luas': 'luas', });
 lyr_AreaPotensiLongsor_6.set('fieldAliases', {'zone': 'zone', 'count': 'count', 'luas': 'luas', });
 lyr_TitikLongsor_7.set('fieldAliases', {'Name': 'Name', 'descriptio': 'descriptio', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMo': 'altitudeMo', 'tessellate': 'tessellate', 'extrude': 'extrude', 'visibility': 'visibility', 'drawOrder': 'drawOrder', 'icon': 'icon', 'foto': 'foto', });
@@ -142,9 +142,9 @@ lyr_KemiringanLereng_5.set('fieldImages', {'slope_clas': 'Range', 'slope_perc': 
 lyr_AreaPotensiLongsor_6.set('fieldImages', {'zone': 'Range', 'count': 'Range', 'luas': 'TextEdit', });
 lyr_TitikLongsor_7.set('fieldImages', {'Name': 'TextEdit', 'descriptio': 'TextEdit', 'timestamp': 'DateTime', 'begin': 'DateTime', 'end': 'DateTime', 'altitudeMo': 'TextEdit', 'tessellate': 'Range', 'extrude': 'Range', 'visibility': 'Range', 'drawOrder': 'Range', 'icon': 'TextEdit', 'foto': 'ExternalResource', });
 lyr_KecamatanCiawi_8.set('fieldImages', {'OBJECTID': 'TextEdit', 'NAMOBJ': 'TextEdit', 'FCODE': 'TextEdit', 'REMARK': 'TextEdit', 'METADATA': 'TextEdit', 'SRS_ID': 'TextEdit', 'KDBBPS': 'TextEdit', 'KDCBPS': 'TextEdit', 'KDCPUM': 'TextEdit', 'KDEBPS': 'TextEdit', 'KDEPUM': 'TextEdit', 'KDPBPS': 'TextEdit', 'KDPKAB': 'TextEdit', 'KDPPUM': 'TextEdit', 'LUASWH': 'TextEdit', 'TIPADM': 'TextEdit', 'WADMKC': 'TextEdit', 'WADMKD': 'TextEdit', 'WADMKK': 'TextEdit', 'WADMPR': 'TextEdit', 'WIADKC': 'TextEdit', 'WIADKK': 'TextEdit', 'WIADPR': 'TextEdit', 'WIADKD': 'TextEdit', 'UUPP': 'TextEdit', 'LUAS': 'TextEdit', 'Desa': 'TextEdit', });
-lyr_KemiringanLereng_5.set('fieldLabels', {'slope_clas': 'no label', 'slope_perc': 'no label', 'slope_desc': 'no label', 'luas': 'no label', });
+lyr_KemiringanLereng_5.set('fieldLabels', {'slope_clas': 'hidden field', 'slope_perc': 'no label', 'slope_desc': 'no label', 'luas': 'hidden field', });
 lyr_AreaPotensiLongsor_6.set('fieldLabels', {'zone': 'hidden field', 'count': 'hidden field', 'luas': 'inline label - always visible', });
-lyr_TitikLongsor_7.set('fieldLabels', {'Name': 'inline label - visible with data', 'descriptio': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMo': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', 'foto': 'inline label - always visible', });
+lyr_TitikLongsor_7.set('fieldLabels', {'Name': 'hidden field', 'descriptio': 'hidden field', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field', 'altitudeMo': 'hidden field', 'tessellate': 'hidden field', 'extrude': 'hidden field', 'visibility': 'hidden field', 'drawOrder': 'hidden field', 'icon': 'hidden field', 'foto': 'header label - always visible', });
 lyr_KecamatanCiawi_8.set('fieldLabels', {'OBJECTID': 'hidden field', 'NAMOBJ': 'hidden field', 'FCODE': 'hidden field', 'REMARK': 'hidden field', 'METADATA': 'hidden field', 'SRS_ID': 'hidden field', 'KDBBPS': 'hidden field', 'KDCBPS': 'hidden field', 'KDCPUM': 'hidden field', 'KDEBPS': 'hidden field', 'KDEPUM': 'hidden field', 'KDPBPS': 'hidden field', 'KDPKAB': 'hidden field', 'KDPPUM': 'hidden field', 'LUASWH': 'hidden field', 'TIPADM': 'hidden field', 'WADMKC': 'hidden field', 'WADMKD': 'hidden field', 'WADMKK': 'hidden field', 'WADMPR': 'hidden field', 'WIADKC': 'hidden field', 'WIADKK': 'hidden field', 'WIADPR': 'hidden field', 'WIADKD': 'hidden field', 'UUPP': 'hidden field', 'LUAS': 'hidden field', 'Desa': 'inline label - always visible', });
 lyr_KecamatanCiawi_8.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
