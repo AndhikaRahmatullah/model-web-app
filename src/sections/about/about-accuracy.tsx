@@ -9,7 +9,7 @@ const AboutAccuracy: React.FC = () => {
         <p className="text-center text-xl font-bold md:text-2xl">Bagaimana Tingkat Akurasi dan Keandalan Data yang Digunakan untuk Mendeteksi Area Rawan Longsor ?</p>
 
         <p className="text-justify text-sm md:text-center md:text-base">
-          Data ini dihasilkan dengan tingkat akurasi sebesar 85% melalui analisis GIS berbasis Google Earth Engine, memberikan hasil yang andal dan presisi untuk mendukung mitigasi bencana dan
+          Data ini dihasilkan dengan tingkat akurasi sebesar 92% melalui analisis GIS berbasis Google Earth Engine, memberikan hasil yang andal dan presisi untuk mendukung mitigasi bencana dan
           pengelolaan risiko lingkungan.
         </p>
       </div>

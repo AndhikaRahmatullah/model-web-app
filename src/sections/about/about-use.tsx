@@ -32,7 +32,7 @@ const AboutUse: React.FC = () => {
           </p>
           <p className="text-justify text-sm md:text-right md:text-base">
             rdNDVI (Relative Difference Normalized Difference Vegetation Index) adalah pengembangan dari NDVI yang membandingkan perubahan indeks vegetasi antara dua periode waktu, digunakan untuk
-            mengidentifikasi dinamika vegetasi dan memantau perubahan lingkungan, seperti area rawan longsor. Adapun analisis ini menggunakan periode waktu antara tahun 2020 - 2023.
+            mengidentifikasi dinamika vegetasi dan memantau perubahan lingkungan, seperti area rawan longsor. Adapun analisis ini menggunakan periode waktu antara tahun 2020 - 2024.
           </p>
         </div>
       </div>
